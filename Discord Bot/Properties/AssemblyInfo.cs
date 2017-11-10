@@ -11,8 +11,8 @@ using System.Windows;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Discord Bot")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyProduct("Discord Bot by szczepix")]
+[assembly: AssemblyCopyright("Copyright ©  2017 by szczepix")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

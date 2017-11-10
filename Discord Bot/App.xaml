@@ -1,8 +1,8 @@
-﻿<Application x:Class="Discord_Bot.App"
+﻿<Application x:Class="szczepix.DiscordBot.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Discord_Bot"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:szczepix.DiscordBot"
+             StartupUri="Views/MainBotUi.xaml">
     <Application.Resources>
          
     </Application.Resources>
