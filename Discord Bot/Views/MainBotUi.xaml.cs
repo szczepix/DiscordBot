@@ -30,6 +30,7 @@ namespace szczepix.DiscordBot
             if(BotConfig.CheckTokenExist())
             {
                 ButtonStart.IsEnabled = false;
+                ButtonStop.IsEnabled = true;
                 DiscordBot.Start();
             }
             else
@@ -44,17 +45,16 @@ namespace szczepix.DiscordBot
             TextConsole.Log("Button:  STOP clicked!");
             ButtonStop.IsEnabled = false;
             ButtonStart.IsEnabled = true;
-
-            //bot?.Cancel();
             DiscordBot.Stop();
         }
 
         private void ButtonTokenSave_Click(object sender, RoutedEventArgs e)
         {
+            TabControlMain.SelectedIndex = 0;
+
             if (PasswordBoxToken.Password == "")
             {
                 TextConsole.Log("First, fill in the Token field!");
-                TabControlMain.SelectedIndex = 0;
                 return;
             }
 

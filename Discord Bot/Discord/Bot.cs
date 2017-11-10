@@ -45,7 +45,7 @@ namespace szczepix.DiscordBot.Discord
 
         private Task Log(LogMessage msg)
         {
-            TextConsole.Add(msg.ToString());
+            TextConsole.Log(msg.ToString());
             return Task.CompletedTask;
         }
 
@@ -74,7 +74,7 @@ namespace szczepix.DiscordBot.Discord
             }
         }
 
-        public async void Cancel()
+        public async void Stop()
         {
             await _client.LogoutAsync();
             await _client.StopAsync();

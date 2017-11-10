@@ -12,10 +12,10 @@ namespace szczepix.DiscordBot
 
         public static void Log(string msg)
         {
-            Add($"{DateTime.Now.Date} + {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}     " + msg);
+            Add(DateTime.Now.ToString("[yyyy-MM-dd HH:mm:ss]    ") + msg);
         }
 
-        public static void Add(string msg)
+        private static void Add(string msg)
         {
             MainBotUI.MainDispatcher.Invoke(() =>
             {

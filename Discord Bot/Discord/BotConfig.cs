@@ -23,14 +23,7 @@ namespace szczepix.DiscordBot.Discord
 
         public static bool CheckTokenExist()
         {
-            if (_token != string.Empty)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return _token != string.Empty;
         }
     }
 }
